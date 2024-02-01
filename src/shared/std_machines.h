@@ -200,6 +200,23 @@ static Machine replicator_2 = {
     MACHINE_TYPE_REPLICATOR_2
 };
 
+static Machine replicator_2b = {
+    "r2b", "Replicator 2 with Bondtech Extruder", 0, 0,
+    {18000, 1000, 15, 2500, 285, 88.95, ENDSTOP_IS_MAX}, // x axis
+    {18000, 1000, 15, 2500, 152, 88.95, ENDSTOP_IS_MAX}, // y axis
+    {1170, 150, 10, 1100, 155, 400, ENDSTOP_IS_MIN},        // z axis
+    {1600, 2000, 20, 147.773, 3200, 0}, // a extruder
+    {1600, 2000, 20, 147.773, 3200, 0}, // b extruder
+    1.75, // nominal filament diameter
+    0.97, // nominal packing density
+    0.4, // nozzle diameter
+    {0, 0, 0}, // toolhead offsets
+    {0.0050, 0.0550},  // JKN
+    1,  // extruder count
+    20, // timeout
+    MACHINE_TYPE_REPLICATOR_2b
+};
+
 static Machine replicator_2H = {
     "r2h", "Replicator 2 with HBP", 0, 0,
     {18000, 1000, 15, 2500, 285, 88.888889, ENDSTOP_IS_MAX}, // x axis
